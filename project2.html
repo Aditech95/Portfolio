@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            background-color: black;
+        }
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 15px;
+        }
+        .project-content h3 {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+            color: #444;
+        }
+        .project-content p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0 0 15px;
+        }
+        .project-content a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .project-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Projects</h1>
+        </div>
+
+        <div class="projects">
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <div class="project-content">
+                    <h3>Project One</h3>
+                    <p>A brief description of the first project. This project focuses on modern design and functionality.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <div class="project-content">
+                    <h3>Project Two</h3>
+                    <p>A brief description of the second project. This project highlights user experience and innovation.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <div class="project-content">
+                    <h3>Project Three</h3>
+                    <p>A brief description of the third project. This project demonstrates technical expertise and creativity.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
